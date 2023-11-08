@@ -62,6 +62,8 @@ public class FilePathData {
                 ", systemCreatedDate=" + systemCreatedDate +
                 '}';
     }
+
+    // File Date Locale
     private String localeDateTime(){
         Locale locale = new Locale("tr", "TR");
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MMM-yyyy",locale);
@@ -69,7 +71,6 @@ public class FilePathData {
         String changeDate = simpleDateFormat.format(date);
         return changeDate;
     }
-
 
     // File Write
     private void secretFileWriter(){
